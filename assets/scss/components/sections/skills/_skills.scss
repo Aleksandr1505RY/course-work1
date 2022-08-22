@@ -6,8 +6,9 @@ $local-gap: calc(40px / 3);
   &__container {
     display: grid;
 
-    gap: $gap-sm;
     margin-bottom: 20px;
+
+    gap: $gap-sm;
     gap: $gap-sm;
 
     @media (min-width: $lg) {
@@ -42,6 +43,7 @@ $local-gap: calc(40px / 3);
   &__actions {
     display: flex;
     justify-content: center;
+
     margin-bottom: 30px;
   }
 }
