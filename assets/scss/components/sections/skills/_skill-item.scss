@@ -22,6 +22,7 @@
     }
     @include abs-position;
   }
+
   &__link {
     display: flex;
     align-items: center;
@@ -32,13 +33,16 @@
 
     transition: color 0.5s;
   }
+
   &__image {
     transition: transform 0.5s;
 
     background-position: center;
     background-size: cover;
+
     @include abs-position;
   }
+
   &__overlay {
     transition: opacity 0.5s;
 
@@ -47,18 +51,22 @@
 
     @include abs-position;
   }
+
   &:hover {
     .skill-item__overlay {
       opacity: 0.95;
     }
+
     .skill-item__image {
       transform: scale(1.1);
     }
+
     .skill-item__link {
       color: $color-accent;
     }
   }
 }
+
 @for $i from 1 through 9 {
   .skill-item:nth-of-type(#{$i}) {
     grid-area: a#{$i};

@@ -1,5 +1,5 @@
 @use "../presets" as *;
-@use "../mixins/" as *;
+@use "../mixins" as *;
 
 *,
 *::before,
@@ -13,12 +13,14 @@ html {
   font-family: $font-main;
   font-size: $font-size;
 }
+
 body {
   letter-spacing: 0.1em;
 
   color: $color-primary;
   background-color: $color-light;
 }
+
 h1 {
   letter-spacing: 0.08em;
 
