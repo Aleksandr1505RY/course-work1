@@ -23,7 +23,6 @@ body {
 
 h1 {
   letter-spacing: 0.08em;
-
   font-family: $font-header;
   font-weight: 300;
   line-height: 1.2em;
@@ -38,9 +37,19 @@ h1 {
     font-size: 1.875rem;
   }
 }
+h2 {
+  letter-spacing: 0.1em;
+  color: $color-primary;
+  font-family: $font-header;
+  line-height: 1.2em;
+}
 
+h3 {
+  letter-spacing: 0.05em;
+  color: $color-gray;
+  font-size: 1.125rem;
+}
 a {
   text-decoration: none;
-
   color: $color-light;
 }
