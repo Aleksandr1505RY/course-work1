@@ -60,3 +60,16 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+@media (max-width: 767.8px) and (min-width: 576px) {
+  .form__form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .form__item:first-of-type {
+    grid-column: 1 / span 2;
+  }
+}
+@media (max-width: 575.8px) {
+  .form__form {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
