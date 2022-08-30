@@ -359,9 +359,11 @@ h2 {
 }
 
 h3 {
-  letter-spacing: 0.05em;
   color: #637588;
+  margin: 1.125rem 0;
   font-size: 1.125rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
 }
 
 a {
@@ -953,7 +955,7 @@ a {
   transition: color 0.5s;
   text-align: center;
   line-height: 1.15;
-  letter-spacing: 0.001em;
+  letter-spacing: 0rem;
 }
 
 .posts-item:nth-of-type(1) {
@@ -980,11 +982,11 @@ a {
   grid-area: p6;
 }
 .footer {
+  background-color: #2d3651;
   padding: 50px 20px 70px;
   text-align: center;
-  background-color: #2d3651;
 }
-.footer__social {
+.footer__socials {
   position: relative;
   display: grid;
   -webkit-box-pack: center;
@@ -995,7 +997,7 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
 }
 
-.footer__social::after {
+.footer__socials::after {
   position: absolute;
   bottom: -20px;
   left: calc(50% - 37.5px);
@@ -1005,7 +1007,7 @@ a {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer__social a {
+.footer__social {
   display: block;
   padding: 10px;
   -webkit-transition: color 0.5s;
@@ -1013,27 +1015,27 @@ a {
   transition: color 0.5s;
 }
 
-.footer__social a:hover,
-.footer__social a:focus {
+.footer__social:hover {
   color: #d66926;
-}
-
-.footer__social .fab {
-  font-size: 36px;
 }
 
 .footer__copy span:nth-of-type(1) {
   margin-right: -0.5em;
-  letter-spacing: 0.35em;
+  letter-spacing: 0.33em;
   font-weight: 100;
-  color: #e5e5e5;
-  opacity: 0.3;
+  color: #637588;
 }
 
 .footer__copy span:nth-of-type(2) {
+  display: block;
   letter-spacing: 0.05em;
   color: #e5e5e5;
   font-weight: 700;
+}
+
+.fab {
+  font-size: 2.25rem;
+  font-weight: 400;
 }
 
 @media (min-width: 576px) {

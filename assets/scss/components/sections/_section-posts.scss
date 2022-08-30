@@ -65,7 +65,7 @@
   transition: color 0.5s;
   text-align: center;
   line-height: 1.15;
-  letter-spacing: 0.001em;
+  letter-spacing: 0rem;
 }
 
 .posts-item:nth-of-type(1) {
@@ -97,7 +97,7 @@
     right: -50px;
   }
   .posts {
-    padding: 100px 0;
+    padding: $gap-x5 0;
   }
   .posts__grid {
     grid-template-areas: "p1 p1 p2 p3" "p4 p5 p6 p6";
@@ -116,7 +116,7 @@
     right: -20px;
   }
   .posts {
-    padding: 80px 0;
+    padding: $gap-x4 0;
   }
   .posts__grid {
     grid-template-areas: "p1 p1 p2" "p3 p4 p4" "p5 p5 p6";
@@ -125,7 +125,7 @@
 }
 @media (max-width: 767.8px) {
   .posts {
-    padding: 60px 0;
+    padding: $gap-x3 0;
   }
 }
 

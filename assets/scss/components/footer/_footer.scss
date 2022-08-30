@@ -2,21 +2,21 @@
 @use "../../mixins" as *;
 
 .footer {
+  background-color: $color-primary;
   padding: 50px 20px 70px;
   text-align: center;
-  background-color: $color-primary;
   &__container {
     @extend %container;
   }
 }
-.footer__social {
+.footer__socials {
   position: relative;
   display: grid;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: $gap-x2;
   grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
 }
-.footer__social::after {
+.footer__socials::after {
   position: absolute;
   bottom: -20px;
   left: calc(50% - 37.5px);
@@ -25,27 +25,28 @@
   content: "";
   background-color: rgba(255, 255, 255, 0.1);
 }
-.footer__social a {
+.footer__social {
   display: block;
-  padding: 10px;
+  padding: $gap-sm;
   transition: color 0.5s;
 }
-.footer__social a:hover,
-.footer__social a:focus {
+.footer__social:hover {
   color: $color-accent;
-}
-.footer__social .fab {
-  font-size: 36px;
 }
 .footer__copy span:nth-of-type(1) {
   margin-right: -0.5em;
-  letter-spacing: 0.35em;
+  letter-spacing: 0.33em;
   font-weight: 100;
-  color: $color-gray-light;
-  opacity: 0.3;
+  color: $color-gray;
 }
 .footer__copy span:nth-of-type(2) {
+  display: block;
   letter-spacing: 0.05em;
   color: $color-gray-light;
   font-weight: 700;
+}
+
+.fab {
+  font-size: 2.25rem;
+  font-weight: 400;
 }
